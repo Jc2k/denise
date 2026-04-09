@@ -21,15 +21,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Rust build artifacts
+        uses: Swatinem/rust-cache@v2
+
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install maturin and pytest
+      - name: Install pytest and build dependencies
         run: pip install maturin pytest
 
-      - name: Build and install (dev)
-        run: maturin develop
+      - name: Build and install
+        run: pip install -e .
 
       - name: Run tests
         run: python -m pytest tests/ -v
@@ -39,6 +45,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Cache Rust build artifacts
+        uses: Swatinem/rust-cache@v2
 
       - name: Check formatting
         run: cargo fmt --check

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["maturin>=1.0,<2"]
+build-backend = "maturin"
+
+[project]
+name = "denise"
+version = "0.1.0"
+description = "Python bindings for the Rust regex crate"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+keywords = ["regex", "rust"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]

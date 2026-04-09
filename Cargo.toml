@@ -1,0 +1,19 @@
+[package]
+name = "denise"
+version = "0.1.0"
+edition = "2021"
+description = "Python bindings for the Rust regex crate"
+license = "MIT"
+
+[lib]
+name = "denise"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.28", features = ["extension-module"] }
+regex = "1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true

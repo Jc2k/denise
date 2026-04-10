@@ -1,12 +1,12 @@
 [package]
-name = "denise"
+name = "paula"
 version = "0.1.0"
 edition = "2021"
 description = "Python bindings for the Rust regex crate"
 license = "MIT"
 
 [lib]
-name = "denise"
+name = "paula"
 crate-type = ["cdylib"]
 
 [dependencies]

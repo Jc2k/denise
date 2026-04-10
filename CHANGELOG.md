@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.5 (2026-04-10)
+
+### Bug Fixes
+
+- Add generate-import-lib
+  ([`b06fbc6`](https://github.com/Jc2k/paula/commit/b06fbc63d05746dcb31ce955956a4be4364e85c5))
+
+
 ## v1.0.4 (2026-04-10)
 
 ### Bug Fixes

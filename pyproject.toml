@@ -21,3 +21,9 @@ classifiers = [
 
 [tool.maturin]
 features = ["pyo3/extension-module"]
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:project.version",
+    "Cargo.toml:package.version",
+]

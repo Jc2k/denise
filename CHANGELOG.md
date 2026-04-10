@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.3 (2026-04-10)
+
+### Bug Fixes
+
+- Use pyo3 abi3-py311 to fix Windows aarch64 cross-compilation
+  ([`891a34c`](https://github.com/Jc2k/paula/commit/891a34c85d85d1f4f3f59e2be5f7985df4ca94c4))
+
+
 ## v1.0.2 (2026-04-10)
 
 ### Bug Fixes

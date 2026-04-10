@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.4 (2026-04-10)
+
+### Bug Fixes
+
+- Missing $
+  ([`09b3f7d`](https://github.com/Jc2k/paula/commit/09b3f7d118b6a9c80f9dbcea839a19cb78f5cc87))
+
+
 ## v1.0.3 (2026-04-10)
 
 ### Bug Fixes

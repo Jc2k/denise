@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "paula"
-version = "1.0.3"
+version = "1.0.4"
 description = "Python bindings for the Rust regex crate"
 readme = "README.md"
 license = { text = "MIT" }

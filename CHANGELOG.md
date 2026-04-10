@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.2 (2026-04-10)
+
+### Bug Fixes
+
+- Simplify build matrix and cover more targets
+  ([`5314b24`](https://github.com/Jc2k/paula/commit/5314b24b05961356407a8f5107b29b8510d18df6))
+
+
 ## v1.0.1 (2026-04-10)
 
 ### Bug Fixes

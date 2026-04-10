@@ -3,7 +3,7 @@ requires = ["maturin>=1.0,<2"]
 build-backend = "maturin"
 
 [project]
-name = "denise"
+name = "paula"
 version = "0.1.0"
 description = "Python bindings for the Rust regex crate"
 readme = "README.md"

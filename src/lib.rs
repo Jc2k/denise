@@ -355,7 +355,7 @@ impl BytesRegexSet {
 /// Exposes :class:`Regex`, :class:`RegexSet`, :class:`BytesRegex`, and
 /// :class:`BytesRegexSet` with GIL-free support.
 #[pymodule(gil_used = false)]
-fn denise(m: &Bound<'_, PyModule>) -> PyResult<()> {
+fn paula(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_class::<Match>()?;
     m.add_class::<BytesMatch>()?;
     m.add_class::<Regex>()?;

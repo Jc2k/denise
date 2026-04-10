@@ -113,7 +113,7 @@ jobs:
     needs: [linux-manylinux, linux-musl, macos, sdist]
     environment:
       name: pypi
-      url: https://pypi.org/p/denise
+      url: https://pypi.org/p/paula
     permissions:
       id-token: write
     steps:
